@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#navbar {
+  width: 250px;
+  background: #222;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
+}
+
+.nav-link:hover {
+  background: #444;
+}
+
+#main-doc {
+  margin-left: 270px;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.main-section header {
+  font-size: 24px;
+  color: #0665cb;
+  margin-bottom: 10px;
+  border-bottom: solid 1px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* Personnalisation des blocs de code */
+pre {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border-left: 5px solid #91a56a;
+  font-family: "Source Code Pro", monospace;
+}
+
+pre code {
+  all: unset;
+  font-family: "Source Code Pro", monospace;
+  display: block;
+}
+
+code {
+  font-family: "Source Code Pro", monospace;
+  background-color: #f4f4f4;
+  color: #c7254e;
+  padding: 3px 6px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+pre code .tag {
+  color: #ff79c6;
+}
+
+pre code .attribute {
+  color: #50fa7b;
+}
+
+pre code .value {
+  color: #f1fa8c;
+}
+
+pre code .comment {
+  color: #6272a4;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: inline-block;
+    padding: 10px;
+    border-bottom: none;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 10px;
+  }
+}

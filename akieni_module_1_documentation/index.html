@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation HTML/CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Documentation HTML/CSS</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Les_bases_du_HTML">Les bases du HTML</a>
+      <a class="nav-link" href="#Les_bases_de_CSS">Les bases de CSS</a>
+      <a class="nav-link" href="#Les_Selecteurs_CSS">Les Selecteurs CSS</a>
+      <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          HTML et CSS sont les langages de base du développement web. HTML
+          permet de structurer la page, tandis que CSS permet de gérer le style
+          et l'apparence.
+        </p>
+        <p>
+          Cette documentation vous guidera à travers les concepts fondamentaux
+          de ces langages.
+        </p>
+      </section>
+
+      <section class="main-section" id="Les_bases_du_HTML">
+        <header>Les bases du HTML</header>
+        <p>
+          HTML (HyperText Markup Language) est le langage utilisé pour
+          structurer les pages web.
+        </p>
+        <p>Exemple de base :</p>
+        <pre><code>
+<span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+    <span class="tag">&lt;head&gt;</span>
+        <span class="tag">&lt;title&gt;</span>Page Web<span class="tag">&lt;/title&gt;</span>
+    <span class="tag">&lt;/head&gt;</span>
+    <span class="tag">&lt;body&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>Hello World<span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span>
+            </code></pre>
+        <p>Quelques balises importantes :</p>
+        <ul>
+          <li><code>&lt;p&gt;</code> pour les paragraphes</li>
+          <li><code>&lt;a&gt;</code> pour les liens</li>
+          <li><code>&lt;img&gt;</code> pour les images</li>
+          <li>
+            <code>&lt;ul&gt;</code> et <code>&lt;li&gt;</code> pour les listes
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Les_bases_de_CSS">
+        <header>Les bases de CSS</header>
+        <p>
+          CSS (Cascading Style Sheets) est utilisé pour styliser les pages HTML.
+        </p>
+        <p>Exemple de style de base :</p>
+        <pre><code>
+<span class="tag">body</span> {
+    <span class="attribute">background-color</span>: <span class="value">lightgray</span>;
+}
+<span class="tag">h1</span> {
+    <span class="attribute">color</span>: <span class="value">blue</span>;
+}
+<span class="tag">p</span> {
+    <span class="attribute">font-size</span>: <span class="value">16px</span>;
+}
+            </code></pre>
+      </section>
+
+      <section class="main-section" id="Les_Selecteurs_CSS">
+        <header>Les Selecteurs CSS</header>
+        <p>Les sélecteurs CSS permettent de cibler des éléments HTML.</p>
+        <p>Exemples de sélecteurs :</p>
+        <pre><code>
+<span class="tag">h1</span> {
+    <span class="attribute">color</span>: <span class="value">red</span>;
+}
+<span class="tag">.class-name</span> {
+    <span class="attribute">font-weight</span>: <span class="value">bold</span>;
+}
+<span class="tag">#id-name</span> {
+    <span class="attribute">background-color</span>: <span class="value">yellow</span>;
+}
+<span class="tag">p:hover</span> {
+    <span class="attribute">color</span>: <span class="value">green</span>;
+}
+            </code></pre>
+      </section>
+
+      <section class="main-section" id="Responsive_Design">
+        <header>Responsive Design</header>
+        <p>
+          Le responsive design permet aux sites de s'adapter aux différentes
+          tailles d'écran.
+        </p>
+        <p>Utilisation des media queries :</p>
+        <pre><code>
+<span class="tag">@media</span> <span class="attribute">(max-width</span>: <span class="value">768px</span>) {
+    <span class="tag">body</span> {
+        <span class="attribute">background-color</span>: <span class="value">lightblue</span>;
+    }
+}
+            </code></pre>
+        <p>Outils pour un design responsive :</p>
+        <ul>
+          <li>Flexbox</li>
+          <li>Grid</li>
+          <li>Unités relatives (% et rem)</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
